@@ -11,7 +11,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="initialize()">
     <header>
         <nav class="navbar navbar-expand-lg bg-black">
             <div class="container-fluid">
@@ -57,12 +57,12 @@
     </header>
 
 
-    <div class="container text-center" style="border:2px solid black; background-color: burlywood;">
+    <div class="container text-center" style="border:2px solid black; background-color: rgb(240, 236, 236);">
         <h1>Bill Calculation</h1>
         <div class="row">
             <div class="col">
                 <h3>Room 1</h3>
-                <table class="table table-success table-striped room">
+                <table class="table table-success table-striped room1">
                     <tr>
                         <th>Item Name</th>
                         <th>Wattage</th>
@@ -120,7 +120,7 @@
             </div>
             <div class="col">
                 <h3>Room 2</h3>
-                <table class="table table-success table-striped">
+                <table class="table table-success table-striped room2">
                     <tr>
                         <th>Item Name</th>
                         <th>Wattage</th>
@@ -129,45 +129,45 @@
                     </tr>
                     <tr>
                         <td>Fan 1</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button type="button" class="btn btn-dark ">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Fan 2</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>AC</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Tubelight</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
@@ -177,7 +177,7 @@
             </div>
             <div class="col">
                 <h3>Room 3</h3>
-                <table class="table table-success table-striped">
+                <table class="table table-success table-striped room3" >
                     <tr>
                         <th>Item Name</th>
                         <th>Wattage</th>
@@ -186,45 +186,45 @@
                     </tr>
                     <tr>
                         <td>Fan 1</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Fan 2</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>AC</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Tubelight</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
@@ -232,11 +232,11 @@
 
                 </table>
             </div>
-        </div><br>
+        </div>
         <div class="row">
             <div class="col">
                 <h3>Lobby</h3>
-                <table class="table table-success table-striped">
+                <table class="table table-success table-striped lobby">
                     <tr>
                         <th>Item Name</th>
                         <th>Wattage</th>
@@ -245,45 +245,45 @@
                     </tr>
                     <tr>
                         <td>Fan 1</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Fan 2</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>AC</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Tubelight</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
                     </tr>
                     <tr>
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
@@ -302,9 +302,11 @@
                     </tr>
                     <tr>
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage">
+                        <td><input type="text" name="" id="washroom1" class="form-control wattField1"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control" placeholder="Hr/day">
+                        <td><input type="text" name="" id="washroom1" class="form-control usageField1"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
                         <td><button type="button" class="btn btn-dark">Delete</button></td>
@@ -316,18 +318,20 @@
 
         </div>
         <div class="row">
-            <div class="col">
+
+            <div class="col" style="margin-top:40px;">
                 <button type="button" class="btn btn-primary" onclick="calculatebill()">Calculate Bill Amount</button>
             </div>
             <div class="col">
                 <div class="finalBill">
-                    <p class="billLoad">Your Load</p>
+                    <p class="billLoad" style="border:2px solid black; background-color: whitesmoke;">Your Load</p>
                 </div>
                 <div class="finalBill">
-                    <p class="billConsumption">Your monthly consumption</p>
+                    <p class="billConsumption" style="border:2px solid black; background-color: whitesmoke;">Your
+                        monthly consumption</p>
                 </div>
                 <div class="finalBill">
-                    <p class="billAmount">Your Bill</p>
+                    <p class="billAmount" style="border:2px solid black; background-color: whitesmoke;">Your Bill</p>
                 </div>
             </div>
         </div>
