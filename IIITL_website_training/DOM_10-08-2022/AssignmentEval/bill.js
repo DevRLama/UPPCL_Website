@@ -1,4 +1,6 @@
 
+
+
 function initialize()
 {
     const numNodewatt=document.querySelectorAll(".wattField");
@@ -14,6 +16,7 @@ function initialize()
         numNodewatt[i].value=0;
 
     }
+
 }
 
 function calculatebill(){
