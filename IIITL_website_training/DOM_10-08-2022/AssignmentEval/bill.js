@@ -35,9 +35,11 @@ function calculatebill(){
         consumption=consumption+ (parseInt(numNodeUsage[i].value)*parseInt(numNodewatt[i].value));
 
     }
+    totwatt=totwatt+(parseInt(numWatt1[0].value))*3;
     consumption=consumption+(( numUsage1[0].value*numWatt1[0].value)*3)   // consumption added for 3 washroom. total consumption per day.
+    let annualConsumption=consumption*365; // annual consumption.
     consumption=consumption*30;  // consumption of 30 days;
-    let annualConsumption=consumption*365;
+   
     // numNodewatt.forEach(element => {
         
     //     totwatt=totwatt + parseInt(element.value);
