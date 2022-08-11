@@ -49,10 +49,10 @@ function calculatebill(){
         
     // });
     
-    document.querySelector(".billLoad").innerHTML= totwatt+" W";
-    document.querySelector(".billConsumption").innerHTML= (consumption)/1000+" KWH";
-    document.querySelector(".billAmount").innerHTML="Rs."+ ((consumption/1000)*5);
-    document.querySelector('.annualConsump').innerHTML=(annualConsumption/1000)+" KWH";
+    document.querySelector(".billLoad").innerHTML="Your total Load is : "+totwatt+" W";
+    document.querySelector(".billConsumption").innerHTML= "Your Monthly Consumption is : "+(consumption)/1000+" KWH";
+    document.querySelector(".billAmount").innerHTML="Your Bill Amount is : "+"Rs."+ ((consumption/1000)*5);
+    document.querySelector('.annualConsump').innerHTML="Your Annual Consumption is: "+(annualConsumption/1000)+" KWH";
 
     // const val=document.querySelectorAll('.appliance');
     // const val1=document.querySelectorAll('#fan1')
