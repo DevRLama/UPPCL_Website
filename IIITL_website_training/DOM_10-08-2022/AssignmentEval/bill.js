@@ -35,8 +35,9 @@ function calculatebill(){
         consumption=consumption+ (parseInt(numNodeUsage[i].value)*parseInt(numNodewatt[i].value));
 
     }
-    consumption=consumption+(( numUsage1[0].value*numWatt1[0].value)*3)   // consumption added for 3 washroom.
- 
+    consumption=consumption+(( numUsage1[0].value*numWatt1[0].value)*3)   // consumption added for 3 washroom. total consumption per day.
+    consumption=consumption*30;  // consumption of 30 days;
+    let annualConsumption=consumption*365;
     // numNodewatt.forEach(element => {
         
     //     totwatt=totwatt + parseInt(element.value);
@@ -48,7 +49,8 @@ function calculatebill(){
     
     document.querySelector(".billLoad").innerHTML= totwatt+" W";
     document.querySelector(".billConsumption").innerHTML= (consumption)/1000+" KWH";
-    document.querySelector(".billAmount").innerHTML="Rs."+ ((consumption/1000)*5)
+    document.querySelector(".billAmount").innerHTML="Rs."+ ((consumption/1000)*5);
+    document.querySelector('.annualConsump').innerHTML=(annualConsumption/1000)+" KWH";
 
     // const val=document.querySelectorAll('.appliance');
     // const val1=document.querySelectorAll('#fan1')

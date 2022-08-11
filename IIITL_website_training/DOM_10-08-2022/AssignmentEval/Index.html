@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg bg-black">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" style="color:white;">UPPCL</a>
-                
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#" style="color:white;">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="#" style="color:white;">Link</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -78,7 +78,8 @@
                         <td><input type="number" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" name="b1"class="btn btn-dark" onclick="remove(event)">Delete</button></td>
+                        <td><button type="button" name="b1" class="btn btn-dark" onclick="remove(event)">Delete</button>
+                        </td>
                     </tr>
                     <tr class="appliance">
                         <td>Fan 2</td>
@@ -179,7 +180,7 @@
             </div>
             <div class="col">
                 <h3>Room 3</h3>
-                <table class="table table-success table-striped room3" >
+                <table class="table table-success table-striped room3">
                     <tr>
                         <th>Item Name</th>
                         <th>Wattage</th>
@@ -321,11 +322,12 @@
         </div>
         <div class="row">
 
-            <div class="col" style="margin-top:40px;">
+            <div class="col" style="margin-top:60px;">
                 <button type="button" class="btn btn-primary" onclick="calculatebill()">Calculate Bill Amount</button>
             </div>
             <div class="col">
                 <div class="finalBill">
+
                     <p class="billLoad" style="border:2px solid black; background-color: whitesmoke;">Your Load</p>
                 </div>
                 <div class="finalBill">
@@ -333,7 +335,13 @@
                         monthly consumption</p>
                 </div>
                 <div class="finalBill">
-                    <p class="billAmount" style="border:2px solid black; background-color: whitesmoke;">Your Bill</p>
+                    <p class="billAmount" style="border:2px solid black; background-color: whitesmoke;">Your Bill
+                    </p>
+                </div>
+                <div class="finalBill">
+                    <p class="annualConsump" style="border:2px solid black; background-color: whitesmoke;">Your
+                        Annual
+                        Consumption</p>
                 </div>
             </div>
         </div>
@@ -356,19 +364,17 @@
                 <p class="billAmount">Your Bill</p>
             </div> -->
     </div>
+    <hr style="margin:5px;">
     <footer>
-        <hr>
-        <div class="footer">Team Member</div>
-        <ul style="list-style: none">
+
+        <div class="footer">Team Members:</div>
+        <ul style="list-style: disc">
             <li>Priyanka Athwani</li>
             <li>Amit Yadav</li>
             <li>Dev Raghvendra Lama</li>
             <li>Rohan</li>
         </ul>
     </footer>
-
-
-
     <script src="bill.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
