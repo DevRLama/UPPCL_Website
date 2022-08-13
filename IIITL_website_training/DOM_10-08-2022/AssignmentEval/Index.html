@@ -71,51 +71,62 @@
                         <th>Usage(hr/day) </th>
                         <th>Action</th>
                     </tr>
-                    <tr class="appliance1">
+                    <tr class="appliance">
                         <td>Fan 1</td>
-                        <td><input type="number" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="number" name="" id="fan1" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="number" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="number" name="" id="fan1" class="form-control usageField fan"
+                                placeholder="Hr/day">
+                                
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" name="b1" class="btn btn-dark" onclick="remove(event)">Delete</button>
+                        <td><button title=" &#xf12a;  Remove the appliance" type="button" name="b1" class="btn btn-danger" onclick="deleteAppliance(this)" onmouseover="">Delete</button>
                         </td>
                     </tr>
                     <tr class="appliance">
                         <td>Fan 2</td>
-                        <td><input type="text" name="" id="fan2" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan2" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan2" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan2" class="form-control usageField fan"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)" >Delete</button></td>
                     </tr>
                     <tr class="appliance">
                         <td>AC</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField AC"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField AC"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr class="appliance">
                         <td>Tubelight</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField tubelight"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField tubelight"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr class="appliance">
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField bulb"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField bulb"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
 
                 </table>
@@ -132,48 +143,58 @@
                     </tr>
                     <tr>
                         <td>Fan 1</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField fan"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark ">Delete</button></td>
+                        <td><button title="Remove the Appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Fan 2</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField fan"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button  title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>AC</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField AC"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField AC"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Tubelight</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField tubelight"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField tubelight"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button  title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField bulb"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField bulb"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
 
                 </table>
@@ -189,48 +210,58 @@
                     </tr>
                     <tr>
                         <td>Fan 1</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField fan"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Fan 2</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField fan"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>AC</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField AC"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField AC"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Tubelight</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField tubelight"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField tubelight"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField bulb"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField bulb"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
 
                 </table>
@@ -248,48 +279,58 @@
                     </tr>
                     <tr>
                         <td>Fan 1</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField fan"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Fan 2</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField fan"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField fan"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>AC</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField AC"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField AC"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>Tubelight</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField tubelight"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField tubelight"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
                     <tr>
                         <td>LED Bulb</td>
-                        <td><input type="text" name="" id="fan1" class="form-control wattField" placeholder="Wattage">
+                        <td><input type="text" name="" id="fan1" class="form-control wattField bulb"
+                                placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="fan1" class="form-control usageField" placeholder="Hr/day">
+                        <td><input type="text" name="" id="fan1" class="form-control usageField bulb"
+                                placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
 
                 </table>
@@ -304,15 +345,39 @@
                         <th>Action</th>
                     </tr>
                     <tr>
-                        <td>LED Bulb</td>
-                        <td><input type="text" name="" id="washroom1" class="form-control wattField1"
+                        <td>LED Bulb Wash Room 1</td>
+                        <td><input type="text" name="" id="washroom1" class="form-control wattField1 bulb"
                                 placeholder="Wattage">
                         </td>
-                        <td><input type="text" name="" id="washroom1" class="form-control usageField1"
+                        <td><input type="text" name="" id="washroom1" class="form-control usageField1 bulb"
                                 placeholder="Hr/day">
                         </td>
                         <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
-                        <td><button type="button" class="btn btn-dark">Delete</button></td>
+                        <td><button  title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>LED Bulb Wash Room 2</td>
+                        <td><input type="text" name="" id="washroom1" class="form-control wattField1 bulb"
+                                placeholder="Wattage">
+                        </td>
+                        <td><input type="text" name="" id="washroom1" class="form-control usageField1 bulb"
+                                placeholder="Hr/day">
+                        </td>
+                        <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
+                        <td><button  title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>LED Bulb Wash Room 3</td>
+                        <td><input type="text" name="" id="washroom1" class="form-control wattField1 bulb"
+                                placeholder="Wattage">
+                        </td>
+                        <td><input type="text" name="" id="washroom1" class="form-control usageField1 bulb"
+                                placeholder="Hr/day">
+                        </td>
+                        <!-- <td><input type="text" name="" id="fan1" class="form-control" placeholder="Wattage"></td> -->
+                        <td><button  title=" Remove the appliance" type="button" class="btn btn-danger" onclick="deleteAppliance(this)">Delete</button></td>
                     </tr>
 
 
@@ -323,10 +388,10 @@
         <div class="row">
 
             <div class="col" style="margin-top:60px;">
-                <button type="button" class="btn btn-primary" onclick="calculatebill()">Calculate Bill Amount</button>
+                <button title="Calculate Load, Monthly Consumption, Monthly Bill and Total consumption" type="button" class="btn btn-primary" onclick="calculatebill()">Calculate Bill Amount</button>
             </div>
             <div class="col">
-                <div class="finalBill" >
+                <div class="finalBill">
 
                     <p class="billLoad" style="border:2px solid black; background-color: whitesmoke;">Your Load</p>
                 </div>
@@ -345,24 +410,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-        <!-- <table class="expense-container">
-            <tr>
-                <th>Sr. Name</th>
-                <th>Appliance Name</th>
-                <th>Cost </th>
-            </tr>
-         
-    
-        </table>
-          
-            <div class="finalBill">
-                <p class="billAmount">Your Bill</p>
-            </div> -->
     </div>
     <hr style="margin:5px;">
     <footer>
@@ -376,6 +423,7 @@
         </ul>
     </footer>
     <script src="bill.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
